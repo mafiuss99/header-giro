@@ -141,6 +141,9 @@ header>.container .menu .links a.current {
         max-height: 0;
         transition: .3s;
         overflow: auto;
+    }
+
+    header>.container .menu .links>li ul > li:first-child {
         margin-top: 20px;
     }
 
