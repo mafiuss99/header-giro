@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header ul {
+    list-style: none;
+}
+
+header a,
+header a:hover {
+    text-decoration: none;
+    color: initial;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0px 3px 4px 0px #0000000d;
+    height: 63px;
+}
+
+header>.container {
+    max-width: 1100px;
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+header>.container .search-mob svg {
+    width: 20px;
+}
+
+header>.container .logo {
+    width: 100px;
+}
+
+header>.container .bar svg {
+    width: 20px;
+}
+
+header>.container .search svg {
+    width: 20px;
+}
+
+header>.container .search svg {
+    height: 100%;
+    display: flex;
+}
+
+header>.container .search svg path {
+    transition: .3s;
+}
+
+header>.container .search:hover svg path {
+    fill: #66994f;
+}
+
+header>.container .search-input {
+    position: absolute;
+    right: 50px;
+    width: 0;
+    overflow-x: auto;
+    transition: .3s;
+}
+
+header>.container .search-input input {
+    background: #efefef;
+    color: #333333;
+    font-size: 13px;
+    height: 30px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+header>.container .search-input.active {
+    width: 280px;
+}
+
+header>.container .menu .links a.current {
+    color: #66994f;
+}
+
+@media screen and (max-width: 991px) {
+    header>.container {
+        justify-content: space-between;
+    }
+
+    header>.container .menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        transition: .3s;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    header>.container .menu.active {
+        left: 0;
+    }
+
+    header>.container .menu .menu-close {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 15px;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0px 3px 4px 0px #0000000d;
+    }
+
+    header>.container .menu .menu-close svg {
+        width: 20px;
+    }
+
+    header>.container .menu .menu-close,
+    header>.container .menu .links {
+        padding: 15px;
+    }
+
+    header>.container .menu .links {
+        padding-top: 66px;
+    }
+
+    header>.container .menu .links li {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header>.container .menu .links>li ul {
+        max-height: 0;
+        transition: .3s;
+        overflow: auto;
+        margin-top: 20px;
+    }
+
+    header>.container .menu .links a.plus-icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header>.container .menu .links a.plus-icon:after {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z'/%3E%3C/svg%3E");
+        ;
+        width: 17px;
+    }
+
+    header>.container .menu .links a.opened.plus-icon:after {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z'/%3E%3C/svg%3E");
+        width: 17px;
+    }
+
+    header>.container .menu .links a.opened+ul {
+        max-height: 100vh;
+    }
+
+    header>.container .menu .links a {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: none;
+        color: #000;
+        height: 100%;
+        width: 100%;
+    }
+
+    header>.container .menu .social {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding: 40px;
+    }
+
+    header>.container .menu .social svg {
+        width: 20px;
+    }
+
+    header>.container .search-input.active {
+        width: 220px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    header>.container .search-mob,
+    header>.container .bar,
+    header>.container .menu .social,
+    header>.container .menu .menu-close {
+        display: none;
+    }
+
+    header>.container .menu {
+        margin-left: auto;
+        display: flex;
+        height: 100%;
+    }
+
+    header>.container .menu .links {
+        margin-right: 40px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    header>.container .menu .links li,
+    header>.container .menu .links li a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    header>.container .menu .links li {
+        position: relative;
+    }
+
+    header>.container .menu .links>li ul {
+        position: absolute;
+        background: white;
+        padding: 12px;
+        width: 200px;
+        display: none;
+        box-shadow: 0px 3px 4px 0px #0000000d;
+    }
+
+    header>.container .menu .links > li > ul {
+        left: -10px;
+        top: 63px;
+    }
+
+    header>.container .menu .links li:hover > ul {
+        display: block;
+        visibility: visible;
+    }
+
+    header>.container .menu .links li:hover > a {
+        color: #66994f;
+    }
+
+    header>.container .menu .links li:not(:last-child) {
+        margin-right: 14px;
+    }
+
+    header>.container .menu .links li a {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #000000;
+        transition: .3s;
+    }
+
+    header>.container .menu .links > li > ul li {
+        padding: 10px;
+    }
+
+    header>.container .menu .links > li > ul ul {
+        top: 30px;
+        left: 50px;
+        background-color: white;
+        z-index: 10;
+    }
+
+    header>.container .menu .links li a:hover {
+        color: #66994f;
+    }
+}

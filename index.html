@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./syle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="bar btn-menu-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+                    </svg>
+            </a>
+            <a href="">
+                <img src="./images/logo-giro-do-boi.svg" alt="Logo" class="logo">
+            </a>
+            <nav class="menu" id="menu">
+                <div class="menu-close">
+                    <a href="#" title="Fechar" class="btn-menu-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
+                            </svg>
+                    </a>
+                </div>
+                <ul class="links">
+                    <li class="link">
+                        <a href="/" class="current" title="HOME">
+                            Home
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="/cotacao/" title="COTAÇÃO">
+                            Contatos
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="/noticias/" title="NOTÍCIAS">
+                            Notícias
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="/categorias/videos/fazenda-nota-10/" title="FAZENDA NOTA 10" style="color: #da2326;">
+                            Fazenda Nota 10
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="/lotes-destaque" title="LOTES EM DESTAQUE">
+                            Lotes em Destaque
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="/dicionario" title="DICIONARIO">
+                            Dicionário
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="/newsletter/" title="NEWSLETTER">
+                            NEWSLETTER
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="social">
+                    <li class="social-link">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>   
+            <a href="#" class="search" id="btnSearch">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                    <path fill="black"
+                        d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
+                    </svg>
+            </a>
+            <form action="/busca" class="search-input" id="inputSearchDesk">
+                <input type="text" placeholder="BUSCA">
+            </form>
+        </div>
+    </header>
+    <div class="modal-search-mob">
+        
+    </div>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const btnClose = document.querySelectorAll(".btn-menu-close");
+            const menu = document.getElementById("menu");
+            const btnSearchDesk = document.getElementById("btnSearch");
+            const inputSearchDesk = document.getElementById("inputSearchDesk");
+            const listItems = document.querySelectorAll('.menu .links a');
+
+            listItems.forEach(el => {
+                const child = el.nextElementSibling;
+
+                if(child){
+                    el.classList.add("plus-icon");
+                    el.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        el.classList.toggle("opened");
+                    });
+                }
+            })
+
+            btnClose.forEach(el => {
+                el.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    menu.classList.toggle("active");
+                })
+            });
+
+            btnSearchDesk.addEventListener("click", (e) => {
+                e.preventDefault();
+                inputSearchDesk.classList.toggle("active");
+            })
+        })
+    </script>
+</body>
+
+</html>
