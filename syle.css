@@ -247,7 +247,7 @@ header>.container .menu .links a.current {
     }
 
     header>.container .menu .links li:not(:last-child) {
-        margin-right: 14px;
+        margin-right: 32px;
     }
 
     header>.container .menu .links li a {
